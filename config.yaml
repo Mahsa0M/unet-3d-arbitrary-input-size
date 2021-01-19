@@ -1,0 +1,21 @@
+# data paths
+train_data_folder_path : ''
+val_data_folder_path : ''
+test_data_folder_path : ''
+
+# label paths
+train_label_folder_path : ''
+val_label_folder_path : ''
+test_label_folder_path : ''
+
+# id list file paths
+train_id_list_file : ''
+val_id_list_file : ''
+test_id_list_file : ''
+
+# train params
+train_log_every : 50
+val_log_every : 500
+max_epochs : 10
+batch_size : 4
+optimizer_lr : 0.003
