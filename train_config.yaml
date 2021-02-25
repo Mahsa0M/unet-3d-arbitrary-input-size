@@ -1,0 +1,20 @@
+# data paths
+train_main_modality_folder_path: './dummy_dataset/main_modality/data_train'
+val_main_modality_folder_path: './dummy_dataset/main_modality/data_val'
+
+# label paths
+train_label_folder_path: './dummy_dataset/label/label_train'
+val_label_folder_path: './dummy_dataset/label/label_val'
+
+# train params
+train_log_every: 10
+val_log_every: 'epoch'   # if 'epoch', only validates after each epoch. Can also take number of batches before validation (int)
+max_epochs: 10
+batch_size: 2
+optimizer_lr: 0.003
+
+additional_inputs_folder_names: [ 'second_modality' ]   #folder names in the final_dataset of inputs in addition to main_modality
+loss_pos_weight: 1
+seed: 20
+
+
