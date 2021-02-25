@@ -1,5 +1,8 @@
 # 3D U-Net that accepts inputs of different sizes
 
+Theoretically, fully convolutional networks are capable of accepting inputs with different sizes. But since U-Nets have residual connections between the encoder and the decoder, an additional limit is for the features at each level to have the same size in the encoder and decoder. Therefore, only certain input sizes can be acceptable for a fully convolutional U-Net. This repo takes inputs of any size and creates batches of acceptable sizes for the 3D U-Net by zero-padding. Therefore, there is no hard constraint on the size of the inputs (only an upper and lower limit). Since this code was originally written for medical image analysis, the inputs are assumed to be NIFTI  images (this can be changed in the dataloader.)
+
+
 Dataset is structured as: ([ ] means arbitrary name, ' ' means should be named exactly the same.)
  
         [dataset folder] ---- 'main_modality' --- data_train -- files named 'BB[number id].nii.gz'
